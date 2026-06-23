@@ -1,0 +1,28 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(45deg, #4a148c, #ff6f00, #00bcd4, #4a148c);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
